@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A website portfolio of Joshua Semana hosted on GitHub",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/styles.css -o dist/output.css"
+  },
+  "keywords": [],
+  "author": "Joshua Semana",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
