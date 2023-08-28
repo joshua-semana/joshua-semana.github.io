@@ -4,7 +4,7 @@
   "description": "A website portfolio of Joshua Semana hosted on GitHub",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss src/styles.css -o dist/output.css"
+    "build:css": "npx tailwindcss -i src/styles.css -o dist/output.css --watch"
   },
   "keywords": [],
   "author": "Joshua Semana",
