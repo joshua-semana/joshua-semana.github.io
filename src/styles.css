@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  height: 1rem;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  --tw-border-opacity: 1;
+  background-color: rgba(165, 180, 252, 0.8);
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 9999px;
+}
+
+@layer components {
+  .text-link {
+    @apply text-indigo-100 font-medium hover:text-indigo-300;
+  }
+  .section-title {
+    @apply text-indigo-100 font-medium text-lg mb-4 tracking-tight;
+  }
+}
