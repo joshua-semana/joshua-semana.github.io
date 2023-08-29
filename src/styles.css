@@ -26,6 +26,9 @@
   .section-title {
     @apply text-indigo-100 font-medium text-lg mb-4 tracking-tight;
   }
+  .icon-hover-effect {
+    @apply transition-all hover:text-indigo-100 hover:-translate-y-1;
+  }
 }
 
 .animate-hidden {
