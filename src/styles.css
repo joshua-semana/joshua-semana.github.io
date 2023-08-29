@@ -27,3 +27,15 @@
     @apply text-indigo-100 font-medium text-lg mb-4 tracking-tight;
   }
 }
+
+.animate-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20px);
+  transition: all 1s;
+}
+.animate-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
