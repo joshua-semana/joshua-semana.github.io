@@ -10,9 +10,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
+    <script src="src/main.js" type="module" defer></script>
   </head>
   <body
     class="font-['Inter'] bg-gradient-to-br from-indigo-950 to-slate-900 text-slate-400 leading-relaxed antialiased selection:bg-indigo-300 selection:text-indigo-900">
+    <div id="scroll-tracker" class="h-1 origin-left bg-indigo-500 sticky top-0 lg:hidden"></div>
     <main
       class="mx-auto min-h-screen max-w-screen-xl flex flex-col px-6 md:px-12 lg:px-24 lg:py-0 lg:flex-row">
       <div
@@ -113,15 +115,15 @@
               </span>
             </h3>
             <ul class="list-disc pl-4 mb-3 animate-hidden">
-              <li>
+              <li class="animate-hidden">
                 Collaborated with senior software developers to debug and resolve issues in client
                 software products, enhancing overall product quality.
               </li>
-              <li>
+              <li class="animate-hidden">
                 Contributed to the development of e-commerce websites, POS systems, and other
                 software applications, including adding new features to meet client requirements.
               </li>
-              <li>
+              <li class="animate-hidden">
                 Worked in a team environment to understand client needs and implement effective
                 solutions within project timelines.
               </li>
@@ -172,30 +174,31 @@
             <h3 class="font-medium mb-3 text-indigo-100 animate-hidden">
               Freelance IT Technician · Self-employed
             </h3>
-            <ul class="list-disc pl-4 mb-3 animate-hidden">
-              <li>
+            <ul class="list-disc pl-4 mb-4 animate-hidden">
+              <li class="animate-hidden">
                 Proficiently performed laptop and system unit repairs, troubleshooting, maintenance,
                 and OS formatting for various clients.
               </li>
-              <li>
+              <li class="animate-hidden">
                 Leveraged in-depth technical knowledge to diagnose and resolve hardware and software
                 issues, ensuring seamless performance.
               </li>
-              <li>
+              <li class="animate-hidden">
                 Provided hands-on assistance to friends, family, and clients, establishing a
                 reputation for delivering effective and reliable technical solutions.
               </li>
-              <li>
+              <li class="animate-hidden">
                 Successfully managed a range of tasks, from laptop optimizations to system unit
                 upgrades.
               </li>
             </ul>
             <ul class="flex-wrap inline-flex gap-2 animate-hidden">
-              <li class="pill">System Diagnosis</li>
-              <li class="pill">OS Format</li>
-              <li class="pill">Software Installation</li>
               <li class="pill">Maintenance</li>
+              <li class="pill">Basic Networking</li>
+              <li class="pill">OS Format</li>
               <li class="pill">Repair</li>
+              <li class="pill">Software Installation</li>
+              <li class="pill">System Diagnosis</li>
               <li class="pill">Troubleshoot</li>
             </ul>
           </div>
@@ -212,6 +215,5 @@
         </section>
       </div>
     </main>
-    <script src="src/main.js"></script>
   </body>
 </html>
