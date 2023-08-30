@@ -43,7 +43,7 @@
     @apply bg-indigo-400/5 rounded-full px-3 py-2 font-bold text-xs text-indigo-300;
   }
   .link {
-    @apply mb-3 inline-flex text-indigo-100 font-medium text-sm items-center hover:text-indigo-300;
+    @apply inline-flex text-indigo-100 font-medium text-sm items-center hover:text-indigo-300;
   }
   img {
     @apply rounded-md border-2 border-indigo-400/60 h-auto col-span-2 mb-3;
