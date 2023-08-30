@@ -598,6 +598,44 @@ video {
   color: rgb(165 180 252 / var(--tw-text-opacity));
 }
 
+img {
+  grid-column: span 2 / span 2;
+  margin-bottom: 0.75rem;
+  height: auto;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  border-color: rgb(129 140 248 / 0.6);
+}
+
+.card-sm {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(129 140 248 / 0.1);
+  padding: 1rem;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.card-sm:hover {
+  background-color: rgb(99 102 241 / 0.05);
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 768px) {
+  .card-sm {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -903,6 +941,10 @@ video {
   font-family: 'Inter';
 }
 
+.font-cursive {
+  font-family: Operator Mono, sans-serif;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -911,6 +953,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -928,6 +975,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-relaxed {
@@ -1009,6 +1060,10 @@ video {
 ::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 9999px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .animate-hidden {
@@ -1096,6 +1151,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1204,5 +1263,14 @@ video {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:leading-loose {
+    line-height: 2;
+  }
+
+  .lg\:hover\:translate-x-4:hover {
+    --tw-translate-x: 1rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }

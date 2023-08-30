@@ -3,6 +3,9 @@ module.exports = {
   content: ["index.html"],
   theme: {
     extend: {
+      fontFamily: {
+        cursive: ["Operator Mono", "sans-serif"],
+      },
       animation: {
         blob: "blob 8s infinite",
       },
