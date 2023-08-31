@@ -31,7 +31,7 @@
 
 @layer components {
   .text-link {
-    @apply text-indigo-100 font-medium hover:text-indigo-300;
+    @apply text-indigo-100 font-medium hover:text-cyan-300;
   }
   .section-title {
     @apply text-indigo-100 mb-5 text-sm font-bold tracking-wider;
@@ -40,16 +40,16 @@
     @apply transition-all hover:text-indigo-100 hover:-translate-y-1;
   }
   .pill {
-    @apply bg-indigo-400/5 rounded-full px-3 py-2 font-bold text-xs text-indigo-300;
+    @apply bg-cyan-400/5 rounded-full px-3 py-2 font-bold text-xs text-cyan-300;
   }
   .link {
-    @apply inline-flex text-indigo-100 font-medium text-sm items-center hover:text-indigo-300;
+    @apply inline-flex text-indigo-100 font-medium text-sm items-center hover:text-cyan-300;
   }
   img {
     @apply rounded-md border-2 border-indigo-400/60 h-auto col-span-2 mb-3 group-hover:border-indigo-400/90;
   }
   .card-sm {
-    @apply p-4 mb-6 hover:bg-indigo-500/5 rounded-lg border border-indigo-400/10 md:grid md:grid-cols-8 gap-4 cursor-pointer drop-shadow-lg hover:drop-shadow-2xl;
+    @apply p-4 mb-6 lg:hover:bg-indigo-500/5 active:bg-indigo-500/5 rounded-lg border border-indigo-400/10 sm:grid grid-cols-8 gap-4 lg:cursor-pointer lg:drop-shadow-lg lg:hover:drop-shadow-2xl;
   }
 }
 
