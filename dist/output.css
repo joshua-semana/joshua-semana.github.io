@@ -607,7 +607,7 @@ img {
 }
 
 .group:hover img {
-  border-color: rgb(129 140 248 / 0.9);
+  border-color: rgb(34 211 238 / 0.9);
 }
 
 .card-sm {
@@ -817,6 +817,21 @@ img {
   transform-origin: left;
 }
 
+.-translate-x-1 {
+  --tw-translate-x: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1 {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-2 {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @keyframes blob {
   0% {
     opacity: 0.4;
@@ -936,9 +951,41 @@ img {
   --tw-gradient-to: #0f172a var(--tw-gradient-to-position);
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-12 {
@@ -1001,6 +1048,14 @@ img {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
 .italic {
   font-style: italic;
 }
@@ -1036,6 +1091,10 @@ img {
   opacity: 0.4;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -1064,6 +1123,18 @@ img {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-75 {
+  transition-delay: 75ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
 }
 
 .animation-delay-1 {
@@ -1178,6 +1249,14 @@ html {
   color: rgb(103 232 249 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group:hover .group-hover\:opacity-80 {
+  opacity: 0.8;
+}
+
 @media (min-width: 640px) {
   .sm\:col-span-6 {
     grid-column: span 6 / span 6;
@@ -1190,10 +1269,6 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
